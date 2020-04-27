@@ -607,12 +607,14 @@ func Download(v Data, refer string, chunkSizeMB int) error {
 		return nil
 	}
 	// merge
+	/*
 	fmt.Printf("Merging video parts into %s\n", mergedFilePath)
 	if v.Site == "YouTube youtube.com" {
 		err = utils.MergeAudioAndVideo(parts, mergedFilePath)
 	} else {
 		err = utils.MergeToMP4(parts, mergedFilePath, title)
 	}
+	*/
 
-	return err
+	return nil
 }
